@@ -1,0 +1,18 @@
+<body><body>
+	<script>
+	var s = ""
+	for(let i=0; i<5000; i++){
+		s += "❤️"
+	}
+	var div = document.createElement('div')
+	div.innerHTML = s
+	document.body.appendChild(div)
+	
+	
+	window.onscroll = function(ev) {
+		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			div.innerHTML += s
+		}
+	}
+	</script>
+</body>
